@@ -6,8 +6,8 @@
         </div>  
         <nav>
             <ul class="d-flex justify-content-around text-uppercase">
-                <li class="m-2" v-for="(link , index) in navLink" :key="index" :class="{active : link.active}">
-                        <a class="fw-bolder" :href="link.href" >{{ link.text }}</a>
+                <li class="m-2" v-for="(link , index) in navLink" :key="index">
+                        <a :class="{active : link.active}" class="fw-bolder" :href="link.href" >{{ link.text }}</a>
                 </li>
             </ul>
         </nav>
@@ -97,11 +97,12 @@ header{
 nav{
     li{
         list-style: none;
-        padding: 10px;
+        
         a{
             text-decoration: none;
             color: $colorTextNav;
             font-size: 0.7rem;
+            padding: 40px 0;
         }
 
 
