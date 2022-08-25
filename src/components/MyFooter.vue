@@ -1,5 +1,5 @@
 <template>
-<H1>FOOTER</H1>
+<H1></H1>
 
 </template>
 
