@@ -1,9 +1,9 @@
 <template>
 <main class="bg-dark">
     <div class="text-white px-3 p-5">
-        <h2>--> Content goes here-- </h2>
+        <h2>--> Content goes here</h2>
     </div>
-    <section>
+    <!-- <section>
         <div class="shopper d-flex p-5 text-white">
             <div class="pe-5">
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="">
@@ -26,7 +26,7 @@
                 DC POWER VISA
             </div>
         </div>
-    </section>
+    </section> -->
 </main>
 
 </template>
@@ -45,7 +45,7 @@ export default {
     img{
         width: 60px;
         height: 60px;
-        object-fit: contain;
+        object-fit: cover;
 
     }
 }

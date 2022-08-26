@@ -6,23 +6,21 @@
         </div>  
         <nav>
             <ul class="d-flex justify-content-around text-uppercase">
-                <li class="m-2" v-for="(link , index) in navLink" :key="index">
+                <li class="m-2" v-for="(link , index) in navLinks" :key="index">
                         <a :class="{active : link.active}" class="fw-bolder" :href="link.href" >{{ link.text }}</a>
                 </li>
             </ul>
         </nav>
-    </div>
- 
+    </div> 
 </header>
 
 </template>
 
 <script>
-export default {
-   
+export default {   
     data : function(){
     return {
-    navLink : [
+    navLinks : [
         {
             text : 'characters' ,
             href : '#',
