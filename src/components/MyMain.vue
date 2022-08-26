@@ -2,6 +2,9 @@
 <main class="bg-dark">
     <!-- <div class="text-white px-3 p-5"> -->
         <!-- <h2> Content goes here</h2> -->
+        <div class="hero_series">
+            <img  src="../assets/img/jumbotron.jpg" alt="">
+        </div>
         <div class="text-white px-5 py-5 container-fluid">
         <div class="px-5 row" >
             <comicsShop v-for="(comic, index) in comicsShopList" :key="index"
@@ -9,6 +12,9 @@
                 :price="comic.price"
                 :series="comic.series"
                 :type="comic.type" />
+        </div>
+        <div class="text-white text-center  mt-3">
+            <span class="btn-load-more px-5 py-2">LOAD MORE</span>
         </div>
     </div>
     <!-- <section>
@@ -128,6 +134,19 @@ export default {
  </script>
 
 <style lang="scss" scoped>
+@import "../styles/variables.scss";
+    .btn-load-more{
+    background: $colorBrand;
+    }
+    
+    .hero_series{
+    img{
+        object-fit: cover;
+        object-position: top;
+        height: 300px;
+        width: 100%;
+        }
+    }
 // @import "../styles/variables.scss";
 // .shopper{
 //     background-color: $colorBrand;
