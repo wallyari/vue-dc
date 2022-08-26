@@ -2,7 +2,7 @@
   <div id="app">
     <MyHeader/>
     <MyMain/>
-    <shopperContent>
+    <shopperContent/>
     <MyFooter/>
     
 
@@ -13,9 +13,8 @@
 <script>
 import MyHeader from './components/MyHeader';
 import MyMain from './components/MyMain';
-import shopperContent from './components/shopperContent.vue';
 import MyFooter from './components/MyFooter';
-import ShopperContent from './components/shopperContent.vue';
+import ShopperContent from './components/shopperContent';
 
 
 export default {
